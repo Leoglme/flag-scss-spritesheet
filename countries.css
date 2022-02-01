@@ -1,0 +1,768 @@
+@use "sass:list";
+span.flag,
+div.flag {
+  width: 22px;
+  height: 15px;
+  display: inline-block; }
+
+.flag {
+  background: url("/public/images/png/flags.png") no-repeat;
+  background-size: 100%; }
+
+.flag-zw {
+  background-position: 0 100%; }
+
+.flag-zr {
+  background-position: 0 99.586777%; }
+
+.flag-zm {
+  background-position: 0 99.173554%; }
+
+.flag-za {
+  background-position: 0 98.760331%; }
+
+.flag-ye {
+  background-position: 0 98.347108%; }
+
+.flag-ws {
+  background-position: 0 97.933885%; }
+
+.flag-wf {
+  background-position: 0 97.520662%; }
+
+.flag-vu {
+  background-position: 0 97.107439%; }
+
+.flag-vn {
+  background-position: 0 96.694216%; }
+
+.flag-vi {
+  background-position: 0 96.280993%; }
+
+.flag-vg {
+  background-position: 0 95.86777%; }
+
+.flag-ve {
+  background-position: 0 95.454547%; }
+
+.flag-vc {
+  background-position: 0 95.041324%; }
+
+.flag-va {
+  background-position: 0 94.628101%; }
+
+.flag-uz {
+  background-position: 0 94.214878%; }
+
+.flag-uy {
+  background-position: 0 93.801655%; }
+
+.flag-us {
+  background-position: 0 93.388432%; }
+
+.flag-um {
+  background-position: 0 92.975209%; }
+
+.flag-gb {
+  background-position: 0 92.561986%; }
+
+.flag-en-uk {
+  background-position: 0 92.561986%; }
+
+.flag-en {
+  background-position: 0 92.561986%; }
+
+.flag-en-gb {
+  background-position: 0 92.561986%; }
+
+.flag-ug {
+  background-position: 0 92.148763%; }
+
+.flag-ua {
+  background-position: 0 91.73554%; }
+
+.flag-tz {
+  background-position: 0 91.322317%; }
+
+.flag-ty {
+  background-position: 0 90.909094%; }
+
+.flag-tw {
+  background-position: 0 90.495871%; }
+
+.flag-tv {
+  background-position: 0 90.082648%; }
+
+.flag-tt {
+  background-position: 0 89.669425%; }
+
+.flag-tr {
+  background-position: 0 89.256202%; }
+
+.flag-tp {
+  background-position: 0 88.842979%; }
+
+.flag-to {
+  background-position: 0 88.429756%; }
+
+.flag-tn {
+  background-position: 0 88.016533%; }
+
+.flag-tm {
+  background-position: 0 87.60331%; }
+
+.flag-tl {
+  background-position: 0 87.190087%; }
+
+.flag-tk {
+  background-position: 0 86.776864%; }
+
+.flag-tj {
+  background-position: 0 86.363641%; }
+
+.flag-th {
+  background-position: 0 85.950418%; }
+
+.flag-tg {
+  background-position: 0 85.537195%; }
+
+.flag-tf {
+  background-position: 0 85.123972%; }
+
+.flag-td {
+  background-position: 0 84.710749%; }
+
+.flag-tc {
+  background-position: 0 84.297526%; }
+
+.flag-sz {
+  background-position: 0 83.884303%; }
+
+.flag-sy {
+  background-position: 0 83.47108%; }
+
+.flag-sv {
+  background-position: 0 83.057857%; }
+
+.flag-st {
+  background-position: 0 82.644634%; }
+
+.flag-ss {
+  background-position: 0 82.231411%; }
+
+.flag-sr {
+  background-position: 0 81.818188%; }
+
+.flag-so {
+  background-position: 0 81.404965%; }
+
+.flag-sn {
+  background-position: 0 80.991742%; }
+
+.flag-sm {
+  background-position: 0 80.578519%; }
+
+.flag-sl {
+  background-position: 0 80.165296%; }
+
+.flag-sk {
+  background-position: 0 79.752073%; }
+
+.flag-sj {
+  background-position: 0 79.33885%; }
+
+.flag-si {
+  background-position: 0 78.925627%; }
+
+.flag-sh {
+  background-position: 0 78.512404%; }
+
+.flag-sg {
+  background-position: 0 78.099181%; }
+
+.flag-se {
+  background-position: 0 77.685958%; }
+
+.flag-sd {
+  background-position: 0 77.272735%; }
+
+.flag-sc {
+  background-position: 0 76.859512%; }
+
+.flag-sb {
+  background-position: 0 76.446289%; }
+
+.flag-sa {
+  background-position: 0 76.033066%; }
+
+.flag-rw {
+  background-position: 0 75.619843%; }
+
+.flag-ru {
+  background-position: 0 75.20662%; }
+
+.flag-rs {
+  background-position: 0 74.793397%; }
+
+.flag-ro {
+  background-position: 0 74.380174%; }
+
+.flag-re {
+  background-position: 0 73.966951%; }
+
+.flag-qa {
+  background-position: 0 73.553728%; }
+
+.flag-py {
+  background-position: 0 73.140505%; }
+
+.flag-pw {
+  background-position: 0 72.727282%; }
+
+.flag-pt {
+  background-position: 0 72.314059%; }
+
+.flag-pr {
+  background-position: 0 71.900836%; }
+
+.flag-pn {
+  background-position: 0 71.487613%; }
+
+.flag-pm {
+  background-position: 0 71.07439%; }
+
+.flag-pl {
+  background-position: 0 70.661167%; }
+
+.flag-pk {
+  background-position: 0 70.247944%; }
+
+.flag-ph {
+  background-position: 0 69.834721%; }
+
+.flag-pg {
+  background-position: 0 69.421498%; }
+
+.flag-pf {
+  background-position: 0 69.008275%; }
+
+.flag-pe {
+  background-position: 0 68.595052%; }
+
+.flag-pa {
+  background-position: 0 68.181829%; }
+
+.flag-om {
+  background-position: 0 67.768606%; }
+
+.flag-nz {
+  background-position: 0 67.355383%; }
+
+.flag-nu {
+  background-position: 0 66.94216%; }
+
+.flag-nr {
+  background-position: 0 66.528937%; }
+
+.flag-np {
+  background-position: 0 66.115714%; }
+
+.flag-no {
+  background-position: 0 65.702491%; }
+
+.flag-nl {
+  background-position: 0 65.289268%; }
+
+.flag-ni {
+  background-position: 0 64.876045%; }
+
+.flag-ng {
+  background-position: 0 64.462822%; }
+
+.flag-nf {
+  background-position: 0 64.049599%; }
+
+.flag-ne {
+  background-position: 0 63.636376%; }
+
+.flag-nc {
+  background-position: 0 63.223153%; }
+
+.flag-na {
+  background-position: 0 62.80993%; }
+
+.flag-mz {
+  background-position: 0 62.396707%; }
+
+.flag-my {
+  background-position: 0 61.983484%; }
+
+.flag-mx {
+  background-position: 0 61.570261%; }
+
+.flag-mw {
+  background-position: 0 61.157038%; }
+
+.flag-mv {
+  background-position: 0 60.743815%; }
+
+.flag-mu {
+  background-position: 0 60.330592%; }
+
+.flag-mt {
+  background-position: 0 59.917369%; }
+
+.flag-ms {
+  background-position: 0 59.504146%; }
+
+.flag-mr {
+  background-position: 0 59.090923%; }
+
+.flag-mq {
+  background-position: 0 58.6777%; }
+
+.flag-mp {
+  background-position: 0 58.264477%; }
+
+.flag-mo {
+  background-position: 0 57.851254%; }
+
+.flag-mn {
+  background-position: 0 57.438031%; }
+
+.flag-mm {
+  background-position: 0 57.024808%; }
+
+.flag-ml {
+  background-position: 0 56.611585%; }
+
+.flag-mk {
+  background-position: 0 56.198362%; }
+
+.flag-mh {
+  background-position: 0 55.785139%; }
+
+.flag-mg {
+  background-position: 0 55.371916%; }
+
+.flag-me {
+  background-position: 0 54.958693%; }
+
+.flag-md {
+  background-position: 0 54.54547%; }
+
+.flag-mc {
+  background-position: 0 54.132247%; }
+
+.flag-ma {
+  background-position: 0 53.719024%; }
+
+.flag-ly {
+  background-position: 0 53.305801%; }
+
+.flag-lv {
+  background-position: 0 52.892578%; }
+
+.flag-lu {
+  background-position: 0 52.479355%; }
+
+.flag-lt {
+  background-position: 0 52.066132%; }
+
+.flag-ls {
+  background-position: 0 51.652909%; }
+
+.flag-lr {
+  background-position: 0 51.239686%; }
+
+.flag-lk {
+  background-position: 0 50.826463%; }
+
+.flag-li {
+  background-position: 0 50.41324%; }
+
+.flag-lc {
+  background-position: 0 50.000017%; }
+
+.flag-lb {
+  background-position: 0 49.586794%; }
+
+.flag-la {
+  background-position: 0 49.173571%; }
+
+.flag-kz {
+  background-position: 0 48.760348%; }
+
+.flag-ky {
+  background-position: 0 48.347125%; }
+
+.flag-kw {
+  background-position: 0 47.933902%; }
+
+.flag-kr {
+  background-position: 0 47.520679%; }
+
+.flag-kp {
+  background-position: 0 47.107456%; }
+
+.flag-kn {
+  background-position: 0 46.694233%; }
+
+.flag-km {
+  background-position: 0 46.28101%; }
+
+.flag-ki {
+  background-position: 0 45.867787%; }
+
+.flag-kh {
+  background-position: 0 45.454564%; }
+
+.flag-kg {
+  background-position: 0 45.041341%; }
+
+.flag-ke {
+  background-position: 0 44.628118%; }
+
+.flag-jp {
+  background-position: 0 44.214895%; }
+
+.flag-ja {
+  background-position: 0 44.214895%; }
+
+.flag-jo {
+  background-position: 0 43.801672%; }
+
+.flag-jm {
+  background-position: 0 43.388449%; }
+
+.flag-it {
+  background-position: 0 42.975226%; }
+
+.flag-is {
+  background-position: 0 42.562003%; }
+
+.flag-ir {
+  background-position: 0 42.14878%; }
+
+.flag-fa {
+  background-position: 0 42.14878%; }
+
+.flag-iq {
+  background-position: 0 41.735557%; }
+
+.flag-io {
+  background-position: 0 41.322334%; }
+
+.flag-in {
+  background-position: 0 40.909111%; }
+
+.flag-il {
+  background-position: 0 40.495888%; }
+
+.flag-he {
+  background-position: 0 40.495888%; }
+
+.flag-ie {
+  background-position: 0 40.082665%; }
+
+.flag-id {
+  background-position: 0 39.669442%; }
+
+.flag-hu {
+  background-position: 0 39.256219%; }
+
+.flag-ht {
+  background-position: 0 38.842996%; }
+
+.flag-hr {
+  background-position: 0 38.429773%; }
+
+.flag-hn {
+  background-position: 0 38.01655%; }
+
+.flag-hm {
+  background-position: 0 37.603327%; }
+
+.flag-hk {
+  background-position: 0 37.190104%; }
+
+.flag-gy {
+  background-position: 0 36.776881%; }
+
+.flag-gw {
+  background-position: 0 36.363658%; }
+
+.flag-gu {
+  background-position: 0 35.950435%; }
+
+.flag-gt {
+  background-position: 0 35.537212%; }
+
+.flag-gs {
+  background-position: 0 35.123989%; }
+
+.flag-gr {
+  background-position: 0 34.710766%; }
+
+.flag-gq {
+  background-position: 0 34.297543%; }
+
+.flag-gp {
+  background-position: 0 33.88432%; }
+
+.flag-gn {
+  background-position: 0 33.471097%; }
+
+.flag-gm {
+  background-position: 0 33.057874%; }
+
+.flag-gl {
+  background-position: 0 32.644651%; }
+
+.flag-gi {
+  background-position: 0 32.231428%; }
+
+.flag-gh {
+  background-position: 0 31.818205%; }
+
+.flag-gf {
+  background-position: 0 31.404982%; }
+
+.flag-ge {
+  background-position: 0 30.991759%; }
+
+.flag-gd {
+  background-position: 0 30.578536%; }
+
+.flag-ga {
+  background-position: 0 30.165313%; }
+
+.flag-fr {
+  background-position: 0 29.75209%; }
+
+.flag-fo {
+  background-position: 0 29.338867%; }
+
+.flag-fm {
+  background-position: 0 28.925644%; }
+
+.flag-fk {
+  background-position: 0 28.512421%; }
+
+.flag-fj {
+  background-position: 0 28.099198%; }
+
+.flag-fi {
+  background-position: 0 27.685975%; }
+
+.flag-et {
+  background-position: 0 27.272752%; }
+
+.flag-es {
+  background-position: 0 26.859529%; }
+
+.flag-er {
+  background-position: 0 26.446306%; }
+
+.flag-eh {
+  background-position: 0 26.033083%; }
+
+.flag-eg {
+  background-position: 0 25.61986%; }
+
+.flag-ee {
+  background-position: 0 25.206637%; }
+
+.flag-ec {
+  background-position: 0 24.793414%; }
+
+.flag-dz {
+  background-position: 0 24.380191%; }
+
+.flag-do {
+  background-position: 0 23.966968%; }
+
+.flag-dm {
+  background-position: 0 23.553745%; }
+
+.flag-dk {
+  background-position: 0 23.140522%; }
+
+.flag-da {
+  background-position: 0 23.140522%; }
+
+.flag-dj {
+  background-position: 0 22.727299%; }
+
+.flag-de {
+  background-position: 0 22.314076%; }
+
+.flag-cz {
+  background-position: 0 21.900853%; }
+
+.flag-cs {
+  background-position: 0 21.900853%; }
+
+.flag-cy {
+  background-position: 0 21.48763%; }
+
+.flag-cx {
+  background-position: 0 21.074407%; }
+
+.flag-cv {
+  background-position: 0 20.661184%; }
+
+.flag-cu {
+  background-position: 0 20.247961%; }
+
+.flag-cr {
+  background-position: 0 19.834738%; }
+
+.flag-co {
+  background-position: 0 19.421515%; }
+
+.flag-cn {
+  background-position: 0 19.008292%; }
+
+.flag-zh {
+  background-position: 0 19.008292%; }
+
+.flag-cm {
+  background-position: 0 18.595069%; }
+
+.flag-cl {
+  background-position: 0 18.181846%; }
+
+.flag-ck {
+  background-position: 0 17.768623%; }
+
+.flag-ci {
+  background-position: 0 17.3554%; }
+
+.flag-ch {
+  background-position: 0 16.942177%; }
+
+.flag-cg {
+  background-position: 0 16.528954%; }
+
+.flag-cf {
+  background-position: 0 16.115731%; }
+
+.flag-cd {
+  background-position: 0 15.702508%; }
+
+.flag-cc {
+  background-position: 0 15.289285%; }
+
+.flag-ca {
+  background-position: 0 14.876062%; }
+
+.flag-bz {
+  background-position: 0 14.462839%; }
+
+.flag-by {
+  background-position: 0 14.049616%; }
+
+.flag-bw {
+  background-position: 0 13.636393%; }
+
+.flag-bv {
+  background-position: 0 13.22317%; }
+
+.flag-bt {
+  background-position: 0 12.809947%; }
+
+.flag-bs {
+  background-position: 0 12.396724%; }
+
+.flag-br {
+  background-position: 0 11.983501%; }
+
+.flag-pt-br {
+  background-position: 0 11.983501%; }
+
+.flag-bo {
+  background-position: 0 11.570278%; }
+
+.flag-bn {
+  background-position: 0 11.157055%; }
+
+.flag-bm {
+  background-position: 0 10.743832%; }
+
+.flag-ru-ua {
+  background-position: 0 10.743832%; }
+
+.flag-bj {
+  background-position: 0 10.330609%; }
+
+.flag-bi {
+  background-position: 0 9.917386%; }
+
+.flag-bh {
+  background-position: 0 9.504163%; }
+
+.flag-bg {
+  background-position: 0 9.09094%; }
+
+.flag-bf {
+  background-position: 0 8.677717%; }
+
+.flag-be {
+  background-position: 0 8.264494%; }
+
+.flag-bd {
+  background-position: 0 7.851271%; }
+
+.flag-bb {
+  background-position: 0 7.438048%; }
+
+.flag-ba {
+  background-position: 0 7.024825%; }
+
+.flag-az {
+  background-position: 0 6.611602%; }
+
+.flag-aw {
+  background-position: 0 6.198379%; }
+
+.flag-au {
+  background-position: 0 5.785156%; }
+
+.flag-at {
+  background-position: 0 5.371933%; }
+
+.flag-as {
+  background-position: 0 4.95871%; }
+
+.flag-ar {
+  background-position: 0 4.545487%; }
+
+.flag-aq {
+  background-position: 0 4.132264%; }
+
+.flag-ao {
+  background-position: 0 3.719041%; }
+
+.flag-an {
+  background-position: 0 3.305818%; }
+
+.flag-am {
+  background-position: 0 2.892595%; }
+
+.flag-al {
+  background-position: 0 2.479372%; }
+
+.flag-ag {
+  background-position: 0 2.066149%; }
+
+.flag-af {
+  background-position: 0 1.652926%; }
+
+.flag-ae {
+  background-position: 0 1.239703%; }
+
+.flag-ad {
+  background-position: 0 0.82648%; }
+
+/*# sourceMappingURL=countries.css.map */

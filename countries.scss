@@ -1,0 +1,78 @@
+@use "sass:list";
+
+
+$spriteSheetUrl: '/public/images/png/flags.png';
+$width: 22px;
+$height: 15px;
+$sprite-range: 0.413223;
+
+$countries: "ad", "ae", "af", "ag", "al", "am", "an", "ao", "aq", "ar",
+"as", "at", "au", "aw", "az", "ba", "bb", "bd", "be", "bf", "bg", "bh", "bi", "bj",
+("bm","ru-ua"), "bn", "bo", ("br", "pt-br"), "bs", "bt", "bv", "bw", "by", "bz","ca", "cc",
+"cd", "cf", "cg", "ch", "ci", "ck", "cl", "cm", ("cn", "zh"), "co", "cr", "cu", "cv",
+"cx", "cy", ("cz", "cs"), "de", "dj", ("dk", "da"), "dm", "do", "dz", "ec", "ee", "eg",
+"eh", "er", "es", "et", "fi", "fj", "fk", "fm", "fo", "fr", "ga", "gd", "ge", "gf", "gh",
+"gi", "gl", "gm", "gn", "gp", "gq", "gr", "gs", "gt", "gu", "gw", "gy", "hk", "hm", "hn",
+"hr", "ht", "hu", "id", "ie", ("il", "he"), "in", "io", "iq", ("ir", "fa"), "is", "it", "jm",
+"jo", ("jp", "ja"), "ke", "kg", "kh", "ki", "km", "kn", "kp", "kr", "kw", "ky", "kz", "la",
+"lb", "lc", "li", "lk", "lr", "ls", "lt", "lu", "lv", "ly", "ma", "mc", "md", "me", "mg",
+"mh", "mk", "ml", "mm", "mn", "mo", "mp", "mq", "mr", "ms", "mt", "mu", "mv", "mw", "mx",
+"my", "mz", "na", "nc", "ne", "nf", "ng", "ni", "nl", "no", "np", "nr", "nu", "nz", "om",
+"pa", "pe", "pf", "pg", "ph", "pk", "pl", "pm", "pn", "pr", "pt", "pw", "py",
+"qa", "re", "ro", "rs", "ru", "rw", "sa", "sb", "sc", "sd", "se", "sg", "sh", "si", "sj",
+"sk", "sl", "sm", "sn", "so", "sr", "ss", "st", "sv", "sy", "sz", "tc", "td", "tf", "tg",
+"th", "tj", "tk", "tl", "tm", "tn", "to", "tp", "tr", "tt", "tv", "tw", "ty", "tz", "ua",
+"ug", ("gb", "en-uk", "en", "en-gb"), "um", "us", "uy", "uz", "va", "vc", "ve", "vg", "vi",
+"vn", "vu", "wf", "ws", "ye", "za", "zm", "zr", "zw";
+
+
+span.flag,
+div.flag {
+  width: $width;
+  height: $height;
+  display: inline-block
+}
+
+.flag {
+  background: url($spriteSheetUrl) no-repeat;
+  background-size: 100%
+}
+
+
+@function reverse($list, $recursive: false) {
+  $result: ();
+
+  @for $i from length($list)*-1 through -1 {
+    @if type-of(nth($list, abs($i))) == list and $recursive {
+      $result: append($result, reverse(nth($list, abs($i)), $recursive));
+    }
+
+    @else {
+      $result: append($result, nth($list, abs($i)));
+    }
+  }
+
+  @return $result;
+}
+
+$new-list: reverse($countries);
+
+
+@each $country in $new-list {
+  $i: index($new-list, $country);
+
+  @if type-of($country) == "string" {
+    .flag-#{$country} {
+      background-position: 0 100 - ($sprite-range * ($i - 1)) * 1%;
+    }
+  } @else {
+    @each $e in $country {
+      @each $d in $e {
+        .flag-#{$d} {
+          background-position: 0 100 - ($sprite-range * ($i - 1)) * 1%;
+        }
+      }
+
+    }
+  }
+}
