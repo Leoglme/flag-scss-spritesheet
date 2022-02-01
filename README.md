@@ -5,7 +5,7 @@
 <h2 align="center">Scss Flag Generator</h2>
 
 <p align="center">
- Quila is a Chat / messaging application made with react js
+ scss/sass countries flags sprite sheet generator. 
 </p>
 
 
@@ -16,7 +16,7 @@
 
 
 
-> Source code for the demo page can be found on the [quila repo](https://github.com/Leoglme/flag-scss-spritesheet)
+> Source code for the demo page can be found on the [flag-scss-spritesheet repo](https://github.com/Leoglme/flag-scss-spritesheet)
 
 ### Contents
 
