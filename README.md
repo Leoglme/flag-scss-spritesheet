@@ -16,7 +16,7 @@
 
 
 
-> Source code for the demo page can be found on the [quila repo](https://github.com/Leoglme/flag-scss-spritesheet)
+> Source code for the demo page can be found on the [flag-scss-spritesheet repo](https://github.com/Leoglme/flag-scss-spritesheet)
 
 ### Contents
 
