@@ -1,0 +1,29 @@
+{
+  "name": "flag-scss-spritesheet",
+  "version": "1.0.0",
+  "description": "scss/sass countries flags sprite sheet generator.",
+  "main": "countries.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leoglme/flag-scss-spritesheet.git"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "json",
+    "country-flags",
+    "scss",
+    "country-codes",
+    "flags",
+    "sass-language"
+  ],
+  "author": "Dibodev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Leoglme/flag-scss-spritesheet/issues"
+  },
+  "homepage": "https://github.com/Leoglme/flag-scss-spritesheet#readme"
+}
