@@ -48,11 +48,11 @@
    ```html
        <html lang="en">
           <body>
-            <span class="flag flag-fr" data-v-2f2b3a59=""></span>
-            <span class="flag flag-it" data-v-2f2b3a59=""></span>
-            <span class="flag flag-de" data-v-2f2b3a59=""></span>
-            <span class="flag flag-en-uk" data-v-2f2b3a59=""></span>
-            <span class="flag flag-en" data-v-2f2b3a59=""></span>
+            <span class="flag flag-fr"></span>
+            <span class="flag flag-it"></span>
+            <span class="flag flag-de"></span>
+            <span class="flag flag-en-uk"></span>
+            <span class="flag flag-en"></span>
           </body>
        </html>
    ```
